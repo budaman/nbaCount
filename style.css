@@ -1,0 +1,101 @@
+body {
+	background-color: #d8d8d8;
+	margin: 0px;
+	font-family: Verdana, Georgia, serif;
+	font-size: 14px;
+}
+
+#container {
+	width: 760px;
+	height: 7000px;
+	margin: 0px auto;
+	background-color: #b7b7b7;
+
+}
+
+#header {
+	background-color: #2d0000;
+	height: 75px;
+
+}
+
+#header h3 {
+	margin: 0px;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(50%);
+	transform: translateY(-50%);
+}
+#teams {
+	background-color: #80827f;
+	margin-top: 10px;
+}
+
+#road {
+	background-color: #232623;
+	color: white;
+	float: left;
+	width: 150px;
+	margin-left: 15px;
+
+}
+
+#home {
+	color: white;
+	width: 150px;
+	float: right;	
+	background-color: #122612;
+}
+
+#roadInput {
+	color:white;
+	display: table;
+	padding: 5px;
+	background-color: #4a4f4a;
+	width: 160px;
+	float: left;
+	text-align: center;
+	padding-left: 15px;
+}
+
+#homeInput {
+	color:white;
+	display: table;
+	padding: 5px;
+	background-color: #2e632f;
+	width: 160px;
+	float: right;
+	text-align: center;
+	margin-right: 15px;
+	padding-left: 15px;
+}
+
+
+
+.row {
+	display: table-row;
+}
+
+.row label {
+	display: table-cell;
+	padding: 2px;
+	text-align: right;
+}
+
+.row input {
+	display: table-cell;
+	padding: 2px;
+}
+
+#count {
+	margin-left: 3px;
+	margin-top: 50px;
+	padding: 5px;
+	background-color: #ff0000;
+	color: white;
+}
+
+

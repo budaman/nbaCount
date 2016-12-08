@@ -2,8 +2,78 @@
 <html>
 <head>
 	<title>nbaCount - here beggins a game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-hello world
+
+<div id="container">
+
+
+<div id="header">
+	<h3> NBACount - let's get the future </h3>
+</div>
+
+<div id="teams"> 
+
+	<div id="road">
+	<h2>ROAD</h2>
+	<select><option value="Atlanta Hawks">Atlanta Hawks</option></select>
+	</div>
+
+	<div id="roadInput">
+	<form id="theForm" action="message.html" method="post" onsubmit="return validateTextbox();">
+		<div class="row">
+			<label for="totalR">TOTAL R:</label> 
+			<input type="text" id="totalR" name=""size="1" maxlength="3" minlength="2"> </br> 
+		</div>
+
+		<div class="row">
+			<label for"last5R">LAST 5 R:</label> 
+			<input type="text" id="last5R" name=""size="1" maxlength="3" minlength="2"> </br> 
+		</div>
+		<div class="row">
+			<label for"restD">REST D:</label> 
+			<input type="text" id="restD" name=""size="1" maxlength="3" minlength="2"> </br> 
+		</div>
+	</form>
+	</div>
+
+
+
+	<div id="homeInput">
+	<form id="theForm" action="message.html" method="post" onsubmit="return validateTextbox();">
+		<div class="row">
+			<label for="totalR">TOTAL R:</label> 
+			<input type="text" id="totalR" name=""size="1" maxlength="3" minlength="2"> </br> 
+		</div>
+
+		<div class="row">
+			<label for"last5R">LAST 5 R:</label> 
+			<input type="text" id="last5R" name=""size="1" maxlength="3" minlength="2"> </br> 
+		</div>
+		<div class="row">
+			<label for"restD">REST D:</label> 
+			<input type="text" id="restD" name=""size="1" maxlength="3" minlength="2"> </br> 
+		</div>
+	</form>
+	</div>
+
+	
+	<div id="home">
+	<h2>HOME</h2>
+	<select><option value="Atlanta Hawks">Atlanta Hawks</option></select>
+	</div>			
+</div>
+
+<button id="count">COUNT</button>
+
+<div>
+content
+</div>
+
+
+</div>
+
+
 </body>
 </html>
