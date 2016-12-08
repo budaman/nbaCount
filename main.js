@@ -21,9 +21,6 @@ var difArray = [];
 
 
 function countResults() {
-
-	alert (difArray.length);
-
 	//Getting a road team points
 
 	var totalRA = document.getElementById('totalRA').value;
@@ -77,8 +74,26 @@ function countResults() {
 	difArray.push(dif);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//HTML ELEMENTS APPEARING -----------------------
-	var container = document.getElementById('container');
+	var container = document.getElementById('main');
 	var new_row = document.createElement('div');
 	new_row.className = "result";
 
@@ -96,9 +111,6 @@ function countResults() {
 
 	 // put it into the DOM
 
-
-
-    
     new_row.innerHTML = 	roadTeam + ": " + roadTeamPoints + " " + homeTeam + ": " + homeTeamPoints + " total: " + togetherPoints + " odd: " + dif + "</br> "
     						+ "Bet company result: ";
 
