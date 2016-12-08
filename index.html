@@ -17,23 +17,24 @@
 
 	<div id="road">
 	<h2>ROAD</h2>
-	<select><option value="Atlanta Hawks">Atlanta Hawks</option></select>
+	<select id="roadTeam"><option value="Atlanta Hawks">Atlanta Hawks</option></select>
 	</div>
 
 	<div id="roadInput">
 	<form id="theForm" action="message.html" method="post" onsubmit="return validateTextbox();">
 		<div class="row">
 			<label for="totalR">TOTAL R:</label> 
-			<input type="text" id="totalR" name=""size="1" maxlength="3" minlength="2"> </br> 
+			<input type="text" id="totalRA" name=""size="1" maxlength="5" minlength="2" placeholder="attack">
+			<input type="text" id="totalRD" name=""size="1" maxlength="5" minlength="2"> </br> 
 		</div>
 
 		<div class="row">
 			<label for"last5R">LAST 5 R:</label> 
-			<input type="text" id="last5R" name=""size="1" maxlength="3" minlength="2"> </br> 
+			<input type="text" id="last5R" name=""size="1" maxlength="3" minlength="2" placeholder="attack"> </br> 
 		</div>
 		<div class="row">
-			<label for"restD">REST D:</label> 
-			<input type="text" id="restD" name=""size="1" maxlength="3" minlength="2"> </br> 
+			<label for"restR">REST D:</label> 
+			<input type="text" id="restR" name=""size="1" maxlength="3" minlength="2" placeholder="attack"> </br> 
 		</div>
 	</form>
 	</div>
@@ -44,16 +45,16 @@
 	<form id="theForm" action="message.html" method="post" onsubmit="return validateTextbox();">
 		<div class="row">
 			<label for="totalR">TOTAL R:</label> 
-			<input type="text" id="totalR" name=""size="1" maxlength="3" minlength="2"> </br> 
+			<input type="text" id="totalH" name=""size="1" maxlength="3" minlength="2" placeholder="attack"> </br> 
 		</div>
 
 		<div class="row">
 			<label for"last5R">LAST 5 R:</label> 
-			<input type="text" id="last5R" name=""size="1" maxlength="3" minlength="2"> </br> 
+			<input type="text" id="last5H" name=""size="1" maxlength="3" minlength="2" placeholder="attack"> </br> 
 		</div>
 		<div class="row">
-			<label for"restD">REST D:</label> 
-			<input type="text" id="restD" name=""size="1" maxlength="3" minlength="2"> </br> 
+			<label for"restH">REST D:</label> 
+			<input type="text" id="restH" name=""size="1" maxlength="3" minlength="2" placeholder="attack"> </br> 
 		</div>
 	</form>
 	</div>
@@ -61,11 +62,11 @@
 	
 	<div id="home">
 	<h2>HOME</h2>
-	<select><option value="Atlanta Hawks">Atlanta Hawks</option></select>
+	<select id="homeTeam"><option value="Atlanta Hawks">Atlanta Hawks</option></select>
 	</div>			
 </div>
 
-<button id="count">COUNT</button>
+<button id="count" onclick="test()">COUNT</button>
 
 <div>
 content
@@ -74,6 +75,6 @@ content
 
 </div>
 
-
+<script src="main.js"></script>
 </body>
 </html>
