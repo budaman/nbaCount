@@ -10,7 +10,10 @@ body {
 	height: 7000px;
 	margin: 0px auto;
 	background-color: #b7b7b7;
+}
 
+#container1 {
+	background-color: #b7b7b7;
 }
 
 #header {
@@ -100,4 +103,18 @@ body {
 	border-radius: 0.3em;
 }
 
+.result {
+	color:white;
+	display: table;
+	padding: 5px;
+	background-color: #0c9978;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+
+.inputBet {
+	background-color: white;
+}
 
