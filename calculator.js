@@ -1,10 +1,25 @@
-var elements = []
+
+
+function insert ( ) {
+
+var i = 0;
+
+inputRoadBet = document.getElementsByClassName("inputRoadBet");
+inputHomeBet = document.getElementsByClassName("inputHomeBet");
 
 
 
-function calculate() {
 
-elements = document.getElementsByClassName("inputBet").value;	
+	alert(
+		roadTeam + 
+
+		inputRoadBet[1].value + " " + inputHomeBet[1].value);
+
+
+
+
+	
+	
 
 
 }
