@@ -1,6 +1,5 @@
 //Gettin a road team
-var getRoadTeam = document.getElementById('roadTeam');
-var roadTeam = getRoadTeam.options[getRoadTeam.selectedIndex].value;
+
 
 //Getting a home team
 var getHomeTeam = document.getElementById('homeTeam');
@@ -22,6 +21,12 @@ var difArray = [];
 
 function countResults() {
 	//Getting a road team points
+
+	var getRoadTeam = document.getElementById('roadTeam');
+    roadTeam = getRoadTeam.options[getRoadTeam.selectedIndex].value;
+
+
+
 
 	var totalRA = document.getElementById('totalRA').value;
 	var totalRD = document.getElementById('totalRD').value;
@@ -101,13 +106,13 @@ function countResults() {
 	input.type = "text";
 	input.size = 1;
 	input.id ="TeamRoadOdd"
-	input.className = "inputBet";
+	input.className = "inputRoadBet";
 
 	var input1 = document.createElement("input");
 	input1.type = "text";
 	input1.size = 1;
 	input1.id ="TeamHomeOdd"
-	input1.className = "inputBet";
+	input1.className = "inputHomeBet";
 
 	 // put it into the DOM
 
@@ -129,6 +134,5 @@ function countResults() {
 	
 
 }
-
 
 
