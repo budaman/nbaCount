@@ -1,9 +1,9 @@
 //Gettin a road team
+var roadTeamArray = [];
+var homeTeamArray = [];
 
 
-//Getting a home team
-var getHomeTeam = document.getElementById('homeTeam');
-var homeTeam = getHomeTeam.options[getHomeTeam.selectedIndex].value;
+
 
 
 
@@ -24,7 +24,11 @@ function countResults() {
 
 	var getRoadTeam = document.getElementById('roadTeam');
     roadTeam = getRoadTeam.options[getRoadTeam.selectedIndex].value;
+    roadTeamArray.push(roadTeam);
 
+    var getHomeTeam = document.getElementById('homeTeam');
+var homeTeam = getHomeTeam.options[getHomeTeam.selectedIndex].value;
+	homeTeamArray.push(homeTeam);
 
 
 

@@ -129,6 +129,17 @@ body {
 	border: 1px solid black;
 }
 
+.final {
+	color:white;
+	display: table;
+	padding: 5px;
+	background-color: rgb(34, 69, 124);
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+
 .inputBet {
 	background-color: white;
 }
