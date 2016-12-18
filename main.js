@@ -1,10 +1,6 @@
-//Gettin a road team
+
 var roadTeamArray = [];
 var homeTeamArray = [];
-
-
-
-
 
 
 var roadTeamPointsArray = [];
@@ -13,14 +9,8 @@ var togetherPointsArray = [];
 var difArray = [];
 
 
-
-
-
-
-
-
 function countResults() {
-	//Getting a road team points
+
 
 	var getRoadTeam = document.getElementById('roadTeam');
     roadTeam = getRoadTeam.options[getRoadTeam.selectedIndex].value;
@@ -48,6 +38,18 @@ var homeTeam = getHomeTeam.options[getHomeTeam.selectedIndex].value;
 	var last5HD = document.getElementById('last5HD').value;
 	var restHA = document.getElementById('restHA').value;
 	var restHD = document.getElementById('restHD').value;
+
+	//=====================COUNTING DEFF POINTS===============================
+
+	totalRD = totalRA - totalRD;
+	last5RD = last5RA - last5RD;
+	restRD = restRA - restRD;
+
+	totalHD = totalHA - totalHD;
+	last5HD = last5HA - last5HD;
+	restHD = restHA - restHD;
+
+
 	
 	
 	//Counting formula
@@ -57,11 +59,6 @@ var homeTeam = getHomeTeam.options[getHomeTeam.selectedIndex].value;
 	var roadTeamPoints = totalpointsRoad / 20;
 	var roadTeamPoints = Math.round(roadTeamPoints);
 	roadTeamPointsArray.push(roadTeamPoints);
-
-	
-
-	
-
 
 
 	//=========HOME TEAM =======================
@@ -81,22 +78,6 @@ var homeTeam = getHomeTeam.options[getHomeTeam.selectedIndex].value;
 	//==========DIFERENCE BETWEEN TEANS=========
 	var dif = roadTeamPoints - homeTeamPoints;
 	difArray.push(dif);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -122,21 +103,35 @@ var homeTeam = getHomeTeam.options[getHomeTeam.selectedIndex].value;
 
     new_row.innerHTML = 	roadTeam + ": " + roadTeamPoints + " " + homeTeam + ": " + homeTeamPoints + " total: " + togetherPoints + " odd: " + dif + "</br> "
     						+ "Bet company result: ";
-
-
-
       container.appendChild(new_row);   
       new_row.appendChild(input);     
       new_row.appendChild(input1);   
 
+    makeNull();
 
+    
+}
 
+function makeNull() {
 
+	document.getElementById('totalRA').value = null;
+	document.getElementById('totalRD').value = null;
+	document.getElementById('last5RA').value = null;
+	document.getElementById('last5RD').value = null;
+	document.getElementById('restRA').value = null;
+	document.getElementById('restRD').value = null;
+	document.getElementById('totalHA').value = null;
+	document.getElementById('totalHD').value = null;
+	document.getElementById('last5HA').value = null;
+	document.getElementById('last5HD').value = null;
+	document.getElementById('restHA').value = null;
+	document.getElementById('restHD').value = null;
 
-
-
+	document.getElementById('roadTeam').selectedIndex = 0;
+	document.getElementById('homeTeam').selectedIndex = 0;
+    
 	
-
+    
 }
 
 

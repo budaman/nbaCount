@@ -127,6 +127,7 @@ body {
 	margin: 0px auto;
 	margin-top: 20px;
 	border: 1px solid black;
+	width: 804px;
 }
 
 .final {
@@ -138,9 +139,9 @@ body {
 	margin: 0px auto;
 	margin-top: 20px;
 	border: 1px solid black;
+	width: 804px;
 }
 
 .inputBet {
 	background-color: white;
 }
-
